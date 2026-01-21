@@ -14,7 +14,7 @@ app.post('/geolocation', (req, res) => {
     const { latitude, longitude } = req.body
     console.log({ latitude, longitude })
 
-    return res.status(201).json('ok')
+    return res.status(201).json({ latitude, longitude })
 })
 
 app.listen(port, () => {
